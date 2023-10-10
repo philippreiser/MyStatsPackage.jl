@@ -1,13 +1,13 @@
 @testset "unit tests" begin
     @testset "rse_sum" begin
-        @test rse_sum([1,2,3]) == 6
+        @test rse_sum([1, 2, 3]) == 6
 
-        @test_throws AssertionError rse_sum([NaN,3,2])
+        @test_throws AssertionError rse_sum([NaN, 3, 2])
     end
 
     @testset "rse_mean" begin
-        @test rse_mean([1,2,3]) == 2
-        @test rse_mean([1,3,6]) ≈ 3.333 atol=1e-3
+        @test rse_mean([1, 2, 3]) == 2
+        @test rse_mean([1, 3, 6]) ≈ 3.333 atol = 1e-3
     end
 
     @testset "rse_tstat" begin
