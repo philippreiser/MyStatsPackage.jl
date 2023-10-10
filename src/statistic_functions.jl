@@ -46,3 +46,10 @@ function StatResult(elements)
 end
 s = StatResult(2:10)
 #---
+
+#---
+function printOwner()
+    println("philippreiser")
+end
+printOwner()
+#---
