@@ -1,6 +1,7 @@
 using ProgressMeter
 #---
 function rse_sum(elements)
+    @assert all(!isnan,elements)
     rse_sum_result = 0
     @showprogress for (index, element) in enumerate(elements)
         rse_sum_result += element
