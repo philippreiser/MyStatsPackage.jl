@@ -13,10 +13,6 @@
     @testset "rse_tstat" begin
         @test rse_tstat(2:3) == 5
     end
-
-    @testset "rse_tstat" begin
-        @test 
-    end
 end
 
 @testset "integration test" begin
