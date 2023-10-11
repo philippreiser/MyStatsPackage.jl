@@ -1,6 +1,30 @@
 using ProgressMeter
 #---
-function rse_sum(elements)
+"""
+rse_sum(elements)::Real
+
+Return the sum of a list of elements.
+
+# Arguments
+
+- `elements` -- List of elements
+
+# Output
+
+A real number representing the sum.
+
+# Notes
+
+The sum is computed over all elements.
+
+# Examples
+
+```julia-repl
+julia> rse_sum([1, 2, 3])
+6
+\```
+"""
+function rse_sum(elements)::Real
     @assert all(!isnan, elements)
     rse_sum_result = 0
     @showprogress for (index, element) in enumerate(elements)
