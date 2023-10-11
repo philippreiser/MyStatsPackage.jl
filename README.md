@@ -1,0 +1,1 @@
+This is a julia package developed during the Research Software Engineering Summer School 2023.
