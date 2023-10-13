@@ -147,7 +147,7 @@ s = StatResult(2:10)
 
 #---
 function printOwner()
-    println("philippreiser")
+    println("philippreiser!")
 end
 printOwner()
 #---
